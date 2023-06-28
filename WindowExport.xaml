@@ -1,0 +1,21 @@
+﻿<Window x:Class="BatchExportPlugin.WindowExport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BatchExportPlugin"
+        mc:Ignorable="d"
+        Title="WindowExport" Height="500" Width="800">
+    <Grid Loaded="Grid_Loaded" Width="800" Height="530" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="buttonExport" Content="Export" HorizontalAlignment="Left" Margin="112,463,0,0" VerticalAlignment="Top" Click="buttonExport_Click" Height="40" Width="100"/>
+        <Button x:Name="buttonClose" Content="Close" HorizontalAlignment="Left" Margin="576,463,0,0" VerticalAlignment="Top" Click="buttonClose_Click" Height="40" Width="100"/>
+        <TextBox x:Name="textBoxInput" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="780" Height="352" Margin="0,75,0,0"/>
+        <CheckBox x:Name="checkBox_SingleExport" Content="CheckBox" HorizontalAlignment="Left" Margin="227,468,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <Label x:Name="label_textBoxDescription" Content="Label" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textblockProgress" HorizontalAlignment="Left" Margin="10,436,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
